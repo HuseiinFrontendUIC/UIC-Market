@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="UIC Academy | UIC Group | UIC Market" />
+    <meta name="description" content="UIC marketdan klon holatda tuzildi " />
+    <meta
+      name="keyword"
+      content="uic market madaminov izzatbek uic group uic academy "
+    />
+    <meta
+      name="auther"
+      content="UIC Academy| online Student Madaminov Izzatbek"
+    />
+
+    <link rel="icon" href="./pictures/favicon.png" />
+    <!-- icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <title>UIC market</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("ectewy8ybZkYdVMyv");
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="modal activeCall">
+      <form>
+        <div class="modal__text">
+          <h3>Оставить заявку</h3>
+          <i class="bx bx-x bx-md"></i>
+        </div>
+        <div class="modul__form">
+          <div>
+            <label for="name">Ф.И.О.<span> *</span></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Введите полное имя"
+            />
+          </div>
+          <div>
+            <label for="number">Номер телефона<span> *</span></label>
+            <input type="tel" name="number" id="number" />
+          </div>
+          <div>
+            <label for="email">Электронная почта</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="example@uic.group"
+              id="email"
+            />
+          </div>
+          <div>
+            <button type="submit" class="btn submitBtn">
+              Отправить <i class="bx bx-chevron-right bx-sm"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <header id="header">
+      <div class="header__green"></div>
+      <div class="header__white"></div>
+      <nav>
+        <div class="container">
+          <i class="bx bx-menu-alt-left bx-lg"></i>
+          <div class="nav__logo">
+            <a href="./index.html"><img src="./pictures/logo.svg" alt="" /></a>
+          </div>
+          <ul class="navbar__items">
+            <div class="media">
+              <i class="bx bx-x close bx-lg"></i>
+              <li class="item media_item">
+                <a href="#" class="item_a active">Маркет</a>
+              </li>
+              <li class="item media_item">
+                <a href="#" class="item_a">Цены</a>
+              </li>
+            </div>
+            <li class="item nav_language">
+              <img
+                src="./pictures/globus.svg"
+                class="navbar__globus"
+                alt="globus"
+              />
+              <a href="#" class="off_active">RU</a>
+              <a href="#">UZ</a>
+              <a href="#">EN</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="header__texts">
+          <h1 class="texts_h1">
+            uic.market - <br />
+            готовые решения
+          </h1>
+          <p class="texts_p">
+            Эти люди верили в философию компании и стремились внести свой вклад
+            <br />
+            в развитие проекта.
+          </p>
+          <div class="btns_group">
+            <button class="btn active_btn">
+              Оставить заявку <i class="bx bx-right-arrow-alt bx-sm"></i>
+            </button>
+            <a href="tell:+998712007007" class="btn call_btn">
+              <span> Позвонить </span><i class="bx bx-phone-call bx-sm"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_foter">
+        <img src="./pictures/scrol.svg" alt="uic market" />
+      </div>
+    </header>
+    <main>
+      <div class="main__texts">
+        <h1>Почему именно мы?</h1>
+        <p>
+          У вас будет возможность ознакомиться с товарами и увидеть их через
+          каталог товаров
+        </p>
+      </div>
+      <!-- <div class="continer">
+        <div class="carousel">
+          <div class="carousel_right">
+            <img
+              src="./pictures/Marketplace/Group 427318669.png"
+              alt="uic market"
+            />
+          </div>
+          <div class="caroulse_talbe">
+            <div class="table_item"></div>
+          </div>
+        </div>
+      </div> -->
+      <div class="container">
+        <div class="main__cards" id="mainCard"></div>
+        <div class="main__products" id="mainProdects"></div>
+        <div class="btns">
+          <div class="btns_group">
+            <button class="btn active_btn">
+              Оставить заявку <i class="bx bx-right-arrow-alt bx-sm"></i>
+            </button>
+          </div>
+        </div>
+        <div class="main_sena" id="mainSena"></div>
+        <div class="btns">
+          <div class="btns_group">
+            <a href="#" class="btn active_btn active_link">
+              Подробно о функции <i class="bx bx-right-arrow-alt bx-sm"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__partner">
+        <div class="container">
+          <h4>партнеры</h4>
+          <h1>Компании, которые нам доверяют</h1>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="footer" id="footer">
+      <div class="container">
+        <div class="top">
+          <a href="#header"><i class="bx bxs-chevrons-right"></i></a>
+        </div>
+        <div class="footer_link">
+          <a href="./index.html" class="active">Маркет</a>
+          <a href="#">Цены</a>
+        </div>
+        <div class="footer_messange"></div>
+        <div class="footer_com">
+          <span>© 2021 UIC.group</span>
+          <img src="./pictures/logo.svg" alt="logo uic market" />
+          <a
+            href="https://yandex.com/maps/org/united_it_company/144492119461/?ll=69.276431%2C41.294968&utm_source=share&z=17"
+            target="_blank"
+          >
+            <span class="location"
+              ><i class="bx bxs-edit-location"></i>г. Ташкент, Мирабадский р-н,
+              ул. Фидокор 8 <span>на карте</span></span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Page js  -->
+    <script src="./js/Api.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/components/nav.js"></script>
+    <script src="./js/components/call.js"></script>
+    <script src="./js/MainCard.js"></script>
+    <script src="./js/MainSena.js"></script>
+    <script src="./js/Footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+@mixin d-flex($justift: space-between, $aling: center) {
+  display: flex;
+  justify-content: $justift;
+  align-items: $aling;
+}
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #43434397;
+  backdrop-filter: blur(3px);
+  z-index: 4;
+  @include d-flex(center, center);
+  form {
+    background-color: #242426;
+    padding: 20px;
+    border: 1px solid #434343;
+    width: 400px;
+    color: #fff;
+    border-radius: 10px;
+    .modal__text {
+      @include d-flex();
+      border-bottom: 1px solid #434343;
+      padding-bottom: 20px;
+      .bx-x {
+        cursor: pointer;
+      }
+    }
+    .modul__form {
+      div {
+        padding: 10px;
+        label {
+          display: block;
+          span {
+            color: red;
+          }
+        }
+        input {
+          width: 100%;
+          border: 1px solid #434343;
+          background-color: transparent;
+          outline: none;
+          padding: 10px 10px;
+          border-radius: 10px;
+          color: #fff;
+          font-size: 16px;
+          margin: 10px 0;
+        }
+      }
+    }
+    .btn {
+      padding: 10px 20px;
+      width: 100%;
+      background-color: #ffffff1a;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      @include d-flex(center, center);
+      gap: 10px;
+      cursor: pointer;
+      .bx-chevron-right {
+        color: #fff;
+        padding: 5px;
+        border-radius: 100px;
+        background-color: #767474;
+        transform: rotate(-20px);
+      }
+    }
+  }
+}
+
+.activeCall {
+  display: none !important;
+}

@@ -1,0 +1,125 @@
+.footer {
+  .container {
+    position: relative;
+    padding: 60px 0;
+    .footer_link {
+      display: flex;
+      gap: 20px;
+      a {
+        color: #ffffff99;
+        font-size: 16px;
+        font-weight: 600;
+        &:hover {
+          color: #fff;
+        }
+      }
+      .active {
+        color: #fff;
+      }
+    }
+
+    .footer_messange {
+      margin: 20px 0;
+      display: flex;
+      gap: 20px;
+      border-bottom: 1px solid #5d5b5ba3;
+      padding-bottom: 40px;
+      .icons {
+        display: flex;
+        align-items: center;
+        a {
+          font-size: 20px;
+          color: #fff;
+          i {
+            border: 1px solid #fff;
+            border-radius: 50%;
+            padding: 5px;
+          }
+        }
+      }
+    }
+    .top {
+      position: absolute;
+      top: 30px;
+      right: 0;
+      a {
+        color: #ffffff71;
+        i {
+          transform: rotate(-90deg);
+          font-size: 40px;
+          border: 1px solid #ffffff71;
+          padding: 10px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .footer_com {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ffffff71;
+      a {
+        color: #ffffff71;
+        transition: all 0.1s linear;
+        .location {
+          display: flex;
+          align-items: center;
+          border-radius: 10px;
+          border: 1px solid #ffffff71;
+          padding: 10px;
+
+          span {
+            padding: 5px 12px;
+            background-color: #ffffff71;
+            border-radius: 10px;
+            color: #fff;
+            margin-left: 10px;
+          }
+        }
+        &:hover {
+          .location {
+            border: 1px solid #00a795;
+            span {
+              background-color: #00a795;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 0px) and (max-width: 768px) {
+    .container {
+      .footer_link {
+        margin: 40px 0;
+      }
+      .footer_messange {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 50px 0;
+      }
+      .top {
+        top: 10px;
+        right: 10px;
+        a {
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+      .footer_com {
+        flex-wrap: wrap;
+        justify-content: center;
+        span {
+          margin: 10px;
+        }
+        img {
+          position: absolute;
+          top: 50px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

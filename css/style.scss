@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+body {
+  background-color: #1e1e20;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 0) and (max-width: 640px) {
+    width: 100vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  .btns_group {
+    .active_link {
+      background-color: #1e1e20;
+      border: 1px solid #81808093;
+      .bx-right-arrow-alt {
+        background-color: #81808093;
+      }
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #00a795;
+        .bx-right-arrow-alt {
+          background-color: #00a795;
+        }
+      }
+    }
+  }
+}
+
+@import "./header/header";
+@import "./components/buttun";
+@import "./components/modal";
+@import "./main/MainCard";
+@import "./main/MainFooter";
+@import "./main/MainSena";
+@import "./Carousel/carouselPartners";
+@import "./Footer/footer";

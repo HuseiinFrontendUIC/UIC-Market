@@ -1,0 +1,107 @@
+.main__products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 297px 373px 297px 373px 297px 373px;
+  justify-content: space-between;
+  column-gap: 40px;
+  row-gap: 40px;
+  margin-top: 40px;
+  .products__card {
+    background-color: #242426;
+    border-radius: 20px;
+    padding: 30px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    .card_title {
+      padding: 0 12px;
+      // position: relative;
+      h2 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: 800;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+      }
+      &::after {
+        content: " ";
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        // background-color: red;
+        right: 100px;
+        bottom: 100px;
+        box-shadow: 0px 0px 100px 100px #ffffff19;
+      }
+    }
+    .bigPicture {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+    }
+  }
+  .card1,
+  .card4,
+  .card7 {
+    grid-column: 1/4;
+    width: 97%;
+    &::after {
+      content: " ";
+      width: 50px;
+      height: 50px;
+      position: absolute;
+
+      right: 100px;
+      bottom: 100px;
+      box-shadow: 0px 0px 100px 100px #1cb1a046;
+    }
+    .card_title {
+      width: 771px;
+      position: relative;
+    }
+    .app {
+      position: absolute;
+      bottom: 40px;
+      img:nth-child(2) {
+        margin-left: 20px;
+      }
+    }
+  }
+  @media (min-width: 0px) and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+    column-gap: 0px;
+    margin: 30px auto;
+    grid-template-rows: 380px 380px 380px 380px 380px 380px 380px 380px 380px;
+    .products__card {
+      padding: 20px;
+      .card_title {
+        padding: 10px;
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .card2,
+    .card3,
+    .card5,
+    .card6,
+    .card8,
+    .card9.card10,
+    .card11,
+    .card12 {
+      grid-column: 1/4;
+    }
+    .card1,
+    .card4,
+    .card7 {
+      width: 100%;
+    }
+  }
+}

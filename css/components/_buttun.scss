@@ -1,0 +1,79 @@
+.btns_group {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+  .btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .active_btn {
+    background-color: #00a795;
+    transition: all 0.2s linear;
+    .bx-right-arrow-alt {
+      background-color: #49c7ba;
+      border-radius: 20px;
+      transform: rotate(-30deg);
+      transition: all 0.2s linear;
+    }
+    &:hover {
+      background-color: #49c7ba;
+      .bx-right-arrow-alt {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  .call_btn {
+    border: 1px solid #fff;
+    position: relative;
+    overflow: hidden;
+    span {
+      padding: 0px;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 60px;
+        background-color: rgba(51, 50, 50, 0.257);
+        top: -15px;
+        left: 100%;
+        transition: all 0.2s linear;
+        // box-shadow: 0px 0px 20px 20px rgba(51, 50, 50, 0.358);
+      }
+    }
+    &:hover {
+      span {
+        &::after {
+          left: 0;
+        }
+      }
+    }
+    .bx-phone-call {
+      z-index: 1;
+      background-color: #ffffff3d;
+      padding: 2px;
+      border-radius: 50%;
+    }
+  }
+  @media (min-width: 0px) and (max-width: 650px) {
+    flex-direction: column;
+    .active_btn {
+      padding: 15px 40px;
+    }
+    .call_btn {
+      padding: 10px 20px !important;
+    }
+  }
+}

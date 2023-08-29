@@ -1,0 +1,45 @@
+.carousel__partner {
+  min-height: 428px;
+  background-color: #19191b;
+  color: #fff;
+  .container {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .mySwiper {
+    height: 250px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .swiper-wrapper {
+      //   background-color: red;
+      width: 100vw;
+      .swiper-slide {
+        margin: 20px 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .swiper-flex-container {
+          border-radius: 10px;
+          background-color: #1e1e20;
+          width: 182px;
+          height: 127px;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            object-fit: cover;
+          }
+        }
+      }
+      .swiper-slide-active {
+        .swiper-flex-container {
+          border: 1px solid #00a795;
+        }
+      }
+    }
+  }
+}
